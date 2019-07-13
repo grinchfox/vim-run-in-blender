@@ -1,7 +1,11 @@
 function! Run_In_Blender()
 	let tmpfile=tempname()
-	exe 'w ' . tmpfile
-	call writefile([tmpfile], '/tmp/bpy_external.io')
+	exe 'w ' . tmpfile 
+	if g:os == "windows"
+		call writefile([tmpfile], $TEMP . '\bpy_external.io')
+	else
+		call writefile([tmpfile], '/tmp/bpy_external.io')
+	endif
 	echo tmpfile
 endfunction
 
@@ -9,7 +13,11 @@ function! Run_Selection_In_Blender() range
 	let tmpfile=tempname()
 	let data=split(getreg('*'),"\n")
 	call writefile(data, tmpfile)
-	call writefile([tmpfile], '/tmp/bpy_external.io')
+	if g:os == "windows"
+		call writefile([tmpfile], $TEMP . '\bpy_external.io')
+	else
+		call writefile([tmpfile], '/tmp/bpy_external.io')
+	endif
 	echo tmpfile
 endfunction
 
