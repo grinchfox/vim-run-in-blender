@@ -20,15 +20,15 @@ install bpy_externall.
 Use your plugin manager of choice.
 
 - [Pathogen](https://github.com/tpope/vim-pathogen)
-  - `git clone https://github.com/mipmip/vim-run-in-blender ~/.vim/bundle/vim-run-in-blender`
+  - `git clone https://github.com/grinchfox/vim-run-in-blender ~/.vim/bundle/vim-run-in-blender`
 - [Vundle](https://github.com/gmarik/vundle)
-  - Add `Bundle 'https://github.com/mipmip/vim-run-in-blender'` to .vimrc
+  - Add `Bundle 'https://github.com/grinchfox/vim-run-in-blender'` to .vimrc
   - Run `:BundleInstall`
 - [NeoBundle](https://github.com/Shougo/neobundle.vim)
-  - Add `NeoBundle 'https://github.com/mipmip/vim-run-in-blender'` to .vimrc
+  - Add `NeoBundle 'https://github.com/grinchfox/vim-run-in-blender'` to .vimrc
   - Run `:NeoBundleInstall`
 - [vim-plug](https://github.com/junegunn/vim-plug)
-  - Add `Plug 'https://github.com/mipmip/vim-run-in-blender'` to .vimrc
+  - Add `Plug 'https://github.com/grinchfox/vim-run-in-blender'` to .vimrc
   - Run `:PlugInstall`
 
 ## Usage
